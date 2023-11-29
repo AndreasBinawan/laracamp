@@ -35,4 +35,11 @@ class Checkout extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function Admin(): BelongsTo
+    {
+        return $this->belongsTo(Admin::class);
+    }
+
+
+
 }
