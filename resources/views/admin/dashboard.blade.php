@@ -38,7 +38,7 @@
                                 </td>
                                 <td>
                                    @if(!$checkout->is_paid)
-                                   <form action="{{route('admin.checkout.update', $checkout->id)}}" method="POST">
+                                   <form action="{{route('checkout.update', $checkout->id)}}" method="POST">
                                     @csrf
                                     <button class="btn btn-primary btn-sm">Set to Paid</button>
                                         </form>
